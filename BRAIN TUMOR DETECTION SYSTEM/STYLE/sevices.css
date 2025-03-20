@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background: linear-gradient(135deg, #005baa 0%, #00396b 100%);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #c0392b;
+}
+.services {
+    padding: 60px 0;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.service-image {
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-content {
+    padding: 20px;
+}
+.team {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.team-member {
+    text-align: center;
+}
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto 15px;
+}
+.patient-journey {
+    padding: 60px 0;
+}
+.journey-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.journey-step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #005baa;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.testimonial-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.quote {
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+}
+.quote:before {
+    content: """
+    font-size  50px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    color: #ddd;
+}
+.faq {
+    padding: 60px 0;
+}
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+.faq-question {
+    font-weight: bold;
+    color: #005baa;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #005baa;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+}
