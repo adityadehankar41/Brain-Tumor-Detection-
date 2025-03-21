@@ -182,3 +182,12 @@ h2:after {
     height: 3px;
     background-color: #e74c3c;
 }
+
+.team-photo {
+    border-radius: 100%;
+}
+
+.michaelchen {
+    border-radius: 100%;
+    
+}
