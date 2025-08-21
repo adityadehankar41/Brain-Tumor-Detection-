@@ -16,30 +16,27 @@ body {
     padding: 0 20px;
 }
 /* Fixed Navigation Bar */
-.navbar {
-    background-color: #116dc9;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --text-color: #34495e;
+    --success-color: #2ecc71;
 }
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
 }
-.logo {
-    font-size: 1.5rem;
+
+.medical-navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medical-navbar .navbar-brand {
     font-weight: bold;
 }
 .nav-links {
@@ -51,22 +48,35 @@ body {
 }
 .nav-links a {
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
 }
-.nav-links a:hover {
-    background-color: rgba(255,255,255,0.1);
+
+.medical-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s;
 }
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+
+.medical-navbar .nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
 }
+
+.consultation-btn {
+    background-color: var(--accent-color);
+    color: white !important;
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+
 header {
     background-color: #116dc9;
     color: white;

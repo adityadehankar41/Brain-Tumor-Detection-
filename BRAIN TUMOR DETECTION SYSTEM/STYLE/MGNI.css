@@ -1,3 +1,54 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --text-color: #34495e;
+    --success-color: #2ecc71;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.medical-navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medical-navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.medical-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.medical-navbar .nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.consultation-btn {
+    background-color: var(--accent-color);
+    color: white !important;
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,6 +56,13 @@ body {
     padding: 0;
     color: #333;
     background-color: #f8f8f8;
+}
+.header-line {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
 }
 .container {
     width: 90%;
