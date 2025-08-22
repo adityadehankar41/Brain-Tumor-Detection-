@@ -199,39 +199,39 @@ header {
     margin-bottom: 0.5rem;
 }
 
+
+
 footer {
-    background-color: var(--secondary-color);
+    background-color: #333;
     color: white;
+    padding: 40px 0;
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
+}
+h2 {
+    text-align: center;
+    color: #005baa;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.team-photo {
+    border-radius: 100%;
 }
 
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.michaelchen {
+    border-radius: 100%;
     
-    .values-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 576px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 footer {
@@ -263,4 +263,15 @@ footer {
 .footer-links a:hover {
     color: white;
     text-decoration: underline;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }

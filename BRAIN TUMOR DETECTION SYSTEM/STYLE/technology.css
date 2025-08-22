@@ -67,6 +67,7 @@ header {
 }
 h1 {
     margin: 20px;
+    margin-right: auto;
 }
 h2 {
     color: #005eb8;
@@ -83,11 +84,40 @@ h2 {
     color: #005eb8;
     margin-top: 0;
 }
-footer {
-    margin-top: 40px;
+.ul{
     text-align: center;
-    font-size: 0.9em;
-    color: #666;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #005baa;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+}
+
+.team-photo {
+    border-radius: 100%;
+}
+
+.michaelchen {
+    border-radius: 100%;
+    
 }
 
 footer {
