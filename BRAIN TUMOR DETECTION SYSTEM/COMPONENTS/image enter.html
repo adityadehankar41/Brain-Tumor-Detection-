@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Detection</title>
+</head>
+<body>
+  <h2>Upload an Image for Detection</h2>
+  <input type="file" id="imageUpload" accept="image/*">
+  <button onclick="uploadImage()">Upload</button>
+  <p id="result"></p>
+
+  <script>
+    function uploadImage() {
+      const file = document.getElementById("imageUpload").files[0];
+      const formData = new FormData();
+      formData.append("image", file);
+
+      fetch("/upload", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("result").innerText = 
+          "Detection Result: " + data.result;
+      });
+    }
+  </script>
+</body>
+</html>

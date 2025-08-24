@@ -50,15 +50,16 @@ body {
 }
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     color: #333;
+    max-width: 100%;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1330px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 header {
     background: linear-gradient(135deg, #5baef7 0%, #00396b 100%);

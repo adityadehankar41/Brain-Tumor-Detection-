@@ -36,6 +36,8 @@ header {
 .medical-navbar {
     background-color: var(--primary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.3rem 1rem;   /* reduce top/bottom space */
+    min-height: 50px; 
 }
 
 .medical-navbar .navbar-brand {
@@ -48,6 +50,8 @@ header {
     font-weight: 500;
     margin-left: 10px;
     transition: all 0.3s;
+    padding: 0.25rem 0.75rem;  /* shrink link size */
+    font-size: 0.9rem;    
 }
 
 .medical-navbar .nav-link:hover {
@@ -56,7 +60,7 @@ header {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -80,7 +84,7 @@ header {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 2rem;
 }
 
